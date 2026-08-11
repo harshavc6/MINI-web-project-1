@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
+}
+
+/* Navigation Section */
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #292929;
+  padding: 15px 40px;
+}
+
+nav img {
+  height: 40px;
+  margin-right: 40px;
+}
+
+nav span {
+  margin-right: 30px;
+}
+
+nav span:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: #f2b632;
+}
+
+/* Content Section */
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url('https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.header h1 {
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.body {
+  padding: 40px 30px;
+}
+
+.body p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Order Button */
+
+.button {
+  display: inline-block;
+  background-color: #f2b632;
+  color: #292929;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 15px 40px;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #d99f1e;
+}
+
+/* Nutrition Information */
+
+.nutrition {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 30px;
+}
+
+.nutrition li {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.nutrition .category {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #9b9b9b;
+  margin-bottom: 8px;
+}
+
+.nutrition .value {
+  font-size: 24px;
+  font-weight: 500;
+  color: #292929;
+}
+
+@media (max-width: 600px) {
+  .nutrition li {
+    width: 50%;
+  }
+}
